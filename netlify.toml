@@ -1,0 +1,30 @@
+[images]
+  remote_images = ["https://source.unsplash.com/.*", "https://images.unsplash.com/.*", "https://ext.same-assets.com/.*", "https://ugc.same-assets.com/.*"]
+
+[build]
+  command = "bun install && bunx --bun vite build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "18"
+  BUN_VERSION = "1.0.25"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/products/*"
+  to = "/index.html"
+  status = 200
