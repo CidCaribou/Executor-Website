@@ -1,5 +1,0 @@
-{
-  "description": {
-    "message": "No more Content-Security-Policy limitations. This extension removes all CSP-related headers and X-Frame Headers."
-  }
-}
