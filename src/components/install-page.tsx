@@ -21,7 +21,46 @@ export function InstallPage() {
   const [bookmarkletDragged, setBookmarkletDragged] = useState(false)
   const [currentTab, setCurrentTab] = useState("bookmarklet")
 
-  const bookmarkletCode = `javascript:(function(){let script=document.createElement('script');script.src='https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@latest/menu.js';document.body.appendChild(script)})();`
+  const bookmarkletCode = `javascript:(function () {
+    try {
+        new Function("var testCSP = 'CSP check'")();
+
+        let script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/menu.js';
+        script.onerror = function () {
+            alert(
+                'Error loading the script. Please try:\n\n' +
+                '1. Going to a different website, as some sites have security that blocks scripts.\n' +
+                '2. If that doesn\'t work, try reinstalling the script.\n' +
+                '3. Contact the owner if the issue persists.'
+            );
+            console.error('Error loading the script via <script src>');
+        };
+        document.body.appendChild(script);
+
+    } catch (err) {
+        if (err.message.includes('Content Security Policy')) {
+            let iframe = document.querySelector("iframe");
+            const cspMessage = 'Error executing script due to Content Security Policy (CSP). Please try:\n\n' +
+                '1. Going to a different website, as some sites have security that blocks scripts.\n' +
+                '2. If that doesn\'t work, install Spoofer.\n' +
+                '3. Contact the owner if the issue continues.';
+            if (iframe) {
+                iframe.contentWindow.alert(cspMessage);
+            } else {
+                alert(cspMessage);
+            }
+        } else {
+            alert(
+                'Error executing script. Please try:\n\n' +
+                '1. Going to a different website, as some sites have security that blocks scripts.\n' +
+                '2. If that doesn\'t work, try reinstalling the script.\n' +
+                '3. Contact the owner if the issue persists.'
+            );
+        }
+        console.error('Error executing the script:', err);
+    }
+})();`
 
   const handleBookmarkletDragStart = () => {
     setBookmarkletDragged(true)
