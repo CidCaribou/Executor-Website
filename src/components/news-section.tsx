@@ -46,10 +46,6 @@ export function NewsSection() {
                   <div className="bg-muted/40 p-4 rounded-md">
                     <h4 className="font-medium mb-2">New Features</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                      <li>Added support for custom themes and improved theme management</li>
-                      <li>Implemented script auto-updating functionality</li>
-                      <li>Introduced script categories for better organization</li>
-                      <li>Added search functionality for scripts</li>
                       <li>Added WebGL-Fluid-Simulation</li>
                       <li>Added Matrix</li>
                       <li>Added Image Glitch</li>
@@ -68,18 +64,22 @@ export function NewsSection() {
                       <li>Added Clear Session Storage</li>
                       <li>Added Wasm-Patcher (Major Script)</li>
                       <li>Added 15th Anniversary MC Cape Exploit (Major Exploit) (Removed Due To It Being Patched)</li>
+                      <li>Added Auto Clicker V2 (Major Script)</li>
+                      <li>Added Wordle Unlimited Hack</li>
+                      <li>Added Scan FSM and UI Labels to Wasm-Patcher</li>
+                      <li>Added Mobile Support</li>
+                      <li>Added Flappy Bird</li>
+                      <li>Added DragonX V2 International (Eaglercraft Hacked Client)</li>
+                      <li>Added Slope</li>
+                      <li>Added DOMI</li>
                   </ul>
                 </div>
 
                 <div className="bg-muted/40 p-4 rounded-md">
                     <h4 className="font-medium mb-2">Improvements</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                      <li>Enhanced UI responsiveness across different screen sizes</li>
-                      <li>Improved script loading performance by 30%</li>
-                      <li>Updated the settings interface for better user experience</li>
-                      <li>Reduced memory usage during script execution</li>
-                      <li>Updated Kahoot Botter</li>
                       <li>Small update preparing for V2</li>
+                      <li>Updated Kahoot Botter</li>
                       <li>Updated text for fullscreen button</li>
                     </ul>
                   </div>
@@ -87,10 +87,6 @@ export function NewsSection() {
                 <div className="bg-muted/40 p-4 rounded-md">
                     <h4 className="font-medium mb-2">Bug Fixes</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                      <li>Fixed an issue where some scripts would not load properly</li>
-                      <li>Resolved a problem with theme switching not persisting between sessions</li>
-                      <li>Fixed various minor UI glitches and visual artifacts</li>
-                      <li>Corrected several script compatibility issues</li>
                       <li>Fixed issue with browser</li>
                       <li>Fixed light and dark mode making background transparent</li>
                       <li>Fixed Prodigy cheats changing the background to white</li>
@@ -104,6 +100,12 @@ export function NewsSection() {
                       <li>Fixed glitch for Clear Local Storage (Name = "Operation Cancelled")</li>
                       <li>Fixed glitch for Clear Cookies (Name = "Operation Cancelled")</li>
                       <li>Fixed glitch for 15th Anniversary MC Cape Exploit</li>
+                      <li>Fixed issue for Auto Clicker V2 where the Mac OS buttons do not work</li>
+                      <li>Fixed UI issue with settings button</li>
+                      <li>Fixed Time Shooter 2</li>
+                      <li>Fixed Wordle+</li>
+                      <li>Fixed Wordle Hacks</li>
+                      <li>Fixed Wordle hacks</li>
                     </ul>
                   </div>
                 </div>
