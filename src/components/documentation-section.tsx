@@ -157,7 +157,7 @@ export function DocumentationSection() {
                 You are permitted to create separate copies or derivative works based on Executor without asking for explicit permission. However, you <strong>must</strong> provide proper credits to the original creator in any derivative work or copy. This includes acknowledging the original author in your documentation, about section, or any other appropriate place in your project.
               </p>
               <p className="text-muted-foreground mt-2">
-                Any content from Executor that you use in your own projects (code snippets, design elements, graphics, etc.) must include a visible credit that states: "Based on or includes elements from Executor by [Creator Name]". Failure to provide proper attribution is a violation of these terms.
+                Any content from Executor that you use in your own projects (code snippets, design elements, graphics, etc.) must include a visible credit that states: "Based on or includes elements from Executor by Wasd". Failure to provide proper attribution is a violation of these terms.
               </p>
             </div>
           </div>
