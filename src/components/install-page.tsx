@@ -21,7 +21,55 @@ export function InstallPage() {
   const [bookmarkletDragged, setBookmarkletDragged] = useState(false)
   const [currentTab, setCurrentTab] = useState("bookmarklet")
 
-  const bookmarkletCode = `javascript:!function(){try{Function("var testCSP = 'CSP check'")();let t=document.createElement("script");t.src="https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/menu.js",t.onload=function(){t.remove()},t.onerror=function(){alert("Error loading the script. Please try:\n\n1. Going to a different website, as some sites have security that blocks scripts.\n2. If that doesn't work, try reinstalling the script.\n3. Contact the owner if the issue persists."),console.error("Error loading the script via <script src>")},document.body.appendChild(t)}catch(e){if(e.message.includes("Content Security Policy")){let r=document.querySelector("iframe"),s="Error executing script due to Content Security Policy (CSP). Please try:\n\n1. Going to a different website, as some sites have security that blocks scripts.\n2. If that doesn't work, install Spoofer.\n3. Contact the owner if the issue continues.";r?r.contentWindow.alert(s):alert(s)}else alert("Error executing script. Please try:\n\n1. Going to a different website, as some sites have security that blocks scripts.\n2. If that doesn't work, try reinstalling the script.\n3. Contact the owner if the issue persists.");console.error("Error executing the script:",e)}}();`
+  const bookmarkletCode = `javascript:(function () {
+    try {
+        new Function("var testCSP = 'CSP check'")();
+
+        let script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/menu.js';
+
+        script.onload = function () {
+            script.remove();
+        };
+
+        script.onerror = function () {
+            alert(
+                'Error loading the script. Please try:\n\n' +
+                '1. Going to a different website, as some sites have security that blocks scripts.\n' +
+                '2. If that doesn\'t work, try reinstalling the script.\n' +
+                '3. Contact the owner if the issue persists.'
+            );
+            console.error('Error loading the script via <script src>');
+        };
+
+        document.body.appendChild(script);
+
+    } catch (err) {
+        if (err.message.includes('Content Security Policy')) {
+            let iframe = document.querySelector("iframe");
+            const cspMessage =
+                'Error executing script due to Content Security Policy (CSP). Please try:\n\n' +
+                '1. Going to a different website, as some sites have security that blocks scripts.\n' +
+                '2. If that doesn\'t work, install Spoofer.\n' +
+                '3. Contact the owner if the issue continues.';
+
+            if (iframe) {
+                iframe.contentWindow.alert(cspMessage);
+            } else {
+                alert(cspMessage);
+            }
+        } else {
+            alert(
+                'Error executing script. Please try:\n\n' +
+                '1. Going to a different website, as some sites have security that blocks scripts.\n' +
+                '2. If that doesn\'t work, try reinstalling the script.\n' +
+                '3. Contact the owner if the issue persists.'
+            );
+        }
+        console.error('Error executing the script:', err);
+    }
+})();
+`
 
   const handleBookmarkletDragStart = () => {
     setBookmarkletDragged(true)
