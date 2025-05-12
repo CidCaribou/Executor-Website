@@ -187,11 +187,11 @@ export function InstallPage() {
                   <ul className="space-y-2">
                     <li className="flex items-start">
                       <span className="mr-2 text-green-500">✓</span>
-                      <span className="text-sm">Runs automatically on supported websites</span>
+                      <span className="text-sm">Runs in the background and turns on when you want.</span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2 text-green-500">✓</span>
-                      <span className="text-sm">No need to click a bookmark every time</span>
+                      <span className="text-sm">Better Scripts</span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2 text-green-500">✓</span>
