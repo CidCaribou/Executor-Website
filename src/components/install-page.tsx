@@ -21,52 +21,7 @@ export function InstallPage() {
   const [bookmarkletDragged, setBookmarkletDragged] = useState(false)
   const [currentTab, setCurrentTab] = useState("bookmarklet")
 
-  const bookmarkletCode = `javascript:(function () {
-    try {
-        new Function("var testCSP = 'CSP check'")();
-
-        let script = document.createElement('script');
-        script.src = 'https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/menu.js';
-
-        script.onload = function () {
-            script.remove();
-        };
-
-        script.onerror = function () {
-            alert(
-                'Error loading the script. Please try:\n\n' +
-                '1. Going to a different website, as some sites have security that blocks scripts.\n' +
-                '2. If that doesn\'t work, try reinstalling the script.\n' +
-                '3. Contact the owner if the issue persists.'
-            );
-            console.error('Error loading the script via <script src>');
-        };
-
-        document.body.appendChild(script);
-
-    } catch (err) {
-        if (err.message.includes('Content Security Policy')) {
-            let iframe = document.querySelector("iframe");
-            const cspMessage = 'Error executing script due to Content Security Policy (CSP). Please try:\n\n' +
-                '1. Going to a different website, as some sites have security that blocks scripts.\n' +
-                '2. If that doesn\'t work, install Spoofer.\n' +
-                '3. Contact the owner if the issue continues.';
-            if (iframe) {
-                iframe.contentWindow.alert(cspMessage);
-            } else {
-                alert(cspMessage);
-            }
-        } else {
-            alert(
-                'Error executing script. Please try:\n\n' +
-                '1. Going to a different website, as some sites have security that blocks scripts.\n' +
-                '2. If that doesn\'t work, try reinstalling the script.\n' +
-                '3. Contact the owner if the issue persists.'
-            );
-        }
-        console.error('Error executing the script:', err);
-    }
-})();`
+  const bookmarkletCode = `javascript:(function(){try{new Function("var testCSP='CSP check'")();var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/gh/CidCaribou/Executor-Menu@main/menu.js';s.onload=function(){s.remove()};s.onerror=function(){alert('Error loading the script.\\n\\nTry:\\n1. Visiting a different site (some block scripts)\\n2. Reinstall the bookmarklet\\n3. Contact the owner.');console.error('Script load error via <script src>')};document.body.appendChild(s)}catch(e){if(e.message.includes('Content Security Policy')){var i=document.querySelector('iframe');var m='Script blocked by CSP.\\n\\nTry:\\n1. Visit a different site\\n2. Use the Spoofer\\n3. Contact the owner.';i?i.contentWindow.alert(m):alert(m)}else{alert('Script execution failed.\\n\\nTry:\\n1. Visit a different site\\n2. Reinstall the bookmarklet\\n3. Contact the owner.');console.error('Execution error:',e)}}})();`;
 
   const handleBookmarkletDragStart = () => {
     setBookmarkletDragged(true)
