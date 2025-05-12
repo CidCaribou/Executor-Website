@@ -21,7 +21,7 @@ export function InstallPage() {
   const [bookmarkletDragged, setBookmarkletDragged] = useState(false)
   const [currentTab, setCurrentTab] = useState("bookmarklet")
 
-  const bookmarkletCode = `javascript:(function () {
+  const bookmarkletCode = `javascript:javascript:(function () {
     try {
         new Function("var testCSP = 'CSP check'")();
 
