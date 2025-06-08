@@ -120,51 +120,86 @@ export function InstallPage() {
           <TabsContent value="extension">
             <Card>
               <CardHeader>
-                <CardTitle>Browser Extension</CardTitle>
+                <CardTitle>Executor Extension</CardTitle>
                 <CardDescription>
-                  Install Executor as a browser extension for a seamless experience
+                  Install Executor as a browser extension for enhanced functionality and performance
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="bg-muted/40 p-8 rounded-lg text-center">
-                  <Chrome className="h-16 w-16 mx-auto mb-6 text-primary opacity-70" />
-                  <h3 className="text-xl font-medium mb-2">Coming Soon!</h3>
-                  <p className="text-muted-foreground max-w-md mx-auto">
-                    We're currently developing browser extensions for Chrome, Firefox, and Edge.
-                    They will be available soon!
+                <div className="bg-muted/40 p-8 rounded-lg">
+                  <div className="flex items-center mb-4">
+                    <img
+                      src="/downloads/executor-icon.png"
+                      alt="Executor Extension"
+                      className="h-12 w-12 mr-3"
+                    />
+                    <div>
+                      <h3 className="text-xl font-medium">Executor Extension</h3>
+                      <p className="text-muted-foreground">Enhanced browser extension version</p>
+                    </div>
+                  </div>
+
+                  <p className="mb-4">
+                    The Executor Extension provides the full Executor experience directly in your browser,
+                    with enhanced performance, better script support, and seamless integration.
                   </p>
-                </div>
 
-                <Separator />
+                  <div className="space-y-4 mb-6">
+                    <h4 className="font-medium flex items-center">
+                      <Shield className="h-4 w-4 mr-2 text-primary" />
+                      Key Features
+                    </h4>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <span className="mr-2 text-green-500">✓</span>
+                        <span className="text-sm">Runs in the background and activates when needed</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-2 text-green-500">✓</span>
+                        <span className="text-sm">Enhanced script library and performance</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-2 text-green-500">✓</span>
+                        <span className="text-sm">Better compatibility with websites</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-2 text-green-500">✓</span>
+                        <span className="text-sm">Automatic updates and improvements</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="mr-2 text-green-500">✓</span>
+                        <span className="text-sm">One-click activation from browser toolbar</span>
+                      </li>
+                    </ul>
+                  </div>
 
-                <div className="space-y-4">
-                  <h3 className="font-medium">Extension Benefits</h3>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <span className="mr-2 text-green-500">✓</span>
-                      <span className="text-sm">Runs in the background and turns on when you want.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-green-500">✓</span>
-                      <span className="text-sm">Better Scripts</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-green-500">✓</span>
-                      <span className="text-sm">Enhanced security and performance</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-green-500">✓</span>
-                      <span className="text-sm">Future updates delivered automatically</span>
-                    </li>
-                  </ul>
+                  <div className="space-y-4 mb-6">
+                    <h4 className="font-medium">Installation Steps:</h4>
+                    <ol className="list-decimal list-inside space-y-2 pl-2">
+                      <li className="text-sm">Download the Executor extension package</li>
+                      <li className="text-sm">Extract the ZIP file to a folder on your computer</li>
+                      <li className="text-sm">Open Chrome and go to chrome://extensions/</li>
+                      <li className="text-sm">Enable "Developer mode" in the top-right corner</li>
+                      <li className="text-sm">Click "Load unpacked" and select the extracted folder</li>
+                      <li className="text-sm">The Executor extension will now be installed in your browser</li>
+                    </ol>
+                  </div>
+
+                  <div className="p-4 bg-muted/50 rounded-lg flex items-start mb-6">
+                    <AlertTriangle className="h-5 w-5 text-amber-500 mr-3 mt-0.5" />
+                    <p className="text-sm text-muted-foreground">
+                      <strong>Note:</strong> For best results, use the Executor Extension alongside the Spoofer extension when websites have strict security policies.
+                    </p>
+                  </div>
+
+                  <div className="mt-6">
+                    <Button className="w-full" onClick={() => { window.location.href = '/downloads/executor.zip' }}>
+                      <Download className="mr-2 h-4 w-4" />
+                      Download Executor Extension
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
-              <CardFooter>
-                <Button variant="outline" className="w-full" disabled>
-                  <Chrome className="mr-2 h-4 w-4" />
-                  Get Notified When Released
-                </Button>
-              </CardFooter>
             </Card>
           </TabsContent>
 
@@ -240,7 +275,7 @@ export function InstallPage() {
                   </div>
 
                   <div className="mt-6">
-                    <Button className="w-full" onClick={() => window.location.href = '/downloads/spoofer.zip'}>
+                    <Button className="w-full" onClick={() => { window.location.href = '/downloads/spoofer.zip' }}>
                       <Download className="mr-2 h-4 w-4" />
                       Download Spoofer Extension
                     </Button>
