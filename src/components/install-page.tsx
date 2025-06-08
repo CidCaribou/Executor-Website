@@ -129,7 +129,7 @@ export function InstallPage() {
                 <div className="bg-muted/40 p-8 rounded-lg">
                   <div className="flex items-center mb-4">
                     <img
-                      src="/downloads/executor-icon.png"
+                      src="/downloads/Executor-Extension-Icon.png"
                       alt="Executor Extension"
                       className="h-12 w-12 mr-3"
                     />
@@ -193,7 +193,7 @@ export function InstallPage() {
                   </div>
 
                   <div className="mt-6">
-                    <Button className="w-full" onClick={() => { window.location.href = '/downloads/executor.zip' }}>
+                    <Button className="w-full" onClick={() => { window.location.href = '/downloads/Executor Extension.zip' }}>
                       <Download className="mr-2 h-4 w-4" />
                       Download Executor Extension
                     </Button>
