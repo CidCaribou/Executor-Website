@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
+  <app appid='executor-extension'>
+    <updatecheck
+      codebase='https://yourdomain.com/downloads/executor.crx'
+      version='1.9.0'
+      status='ok'
+      hash_sha256='placeholder-hash-will-be-generated' />
+  </app>
+</gupdate>
