@@ -3,7 +3,7 @@
   "name": "Executor",
   "version": "1.9.0",
   "description": "A multi-tool script",
-  "update_url": "https://yourdomain.com/updates.xml",
+  "update_url": "https://executor-official.netlify.app/updates.xml",
   "permissions": ["scripting", "activeTab", "storage"],
   "action": {
     "default_icon": {
