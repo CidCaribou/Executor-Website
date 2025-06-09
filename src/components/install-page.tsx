@@ -180,7 +180,7 @@ export function InstallPage() {
                       <li className="text-sm">Extract the ZIP file to a folder on your computer</li>
                       <li className="text-sm">Open Chrome and go to chrome://extensions/</li>
                       <li className="text-sm">Enable "Developer mode" in the top-right corner</li>
-                      <li className="text-sm">Click "Load unpacked" and select the extracted folder</li>
+                      <li className="text-sm">Drag and drop the crx file from the zip file you extracted</li>
                       <li className="text-sm">The Executor extension will now be installed in your browser</li>
                     </ol>
                   </div>
