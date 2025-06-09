@@ -2,7 +2,7 @@
 <gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='executor-extension'>
     <updatecheck
-      codebase='https://yourdomain.com/downloads/executor.crx'
+      codebase='https://executor-official.netlify.app/executor-extension.crx'
       version='1.9.0'
       status='ok'
       hash_sha256='placeholder-hash-will-be-generated' />
