@@ -3,6 +3,6 @@
   <app appid="bdoefpinkmnhmhngpjbeefoccpmjnklh">
     <updatecheck 
       codebase="https://executor-official.netlify.app/executor-extension.crx"
-      version="1.0.2" />
+      version="1.0.3" />
   </app>
 </gupdate>
