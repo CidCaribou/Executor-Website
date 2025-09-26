@@ -50,7 +50,7 @@ export function InstallPage() {
           className="w-full"
           onValueChange={(value) => setCurrentTab(value)}
         >
-          <TabsList className="grid w-full grid-cols-3 mb-8">
+          <TabsList className="grid w-full grid-cols-4 mb-8">
             <TabsTrigger value="bookmarklet">Bookmarklet</TabsTrigger>
             <TabsTrigger value="extension">Browser Extension</TabsTrigger>
             <TabsTrigger value="spoofer">Spoofer</TabsTrigger>
