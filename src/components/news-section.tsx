@@ -26,86 +26,60 @@ export function NewsSection() {
         <div className="max-w-5xl mx-auto">
           <Tabs defaultValue="current" className="mb-12">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
-              <TabsTrigger value="current">Current (V1.9)</TabsTrigger>
-              <TabsTrigger value="old">Whats New (V1.9)</TabsTrigger>
+              <TabsTrigger value="current">Current (V2.2.4)</TabsTrigger>
+              <TabsTrigger value="old">Whats New (V2)</TabsTrigger>
             </TabsList>
 
             <TabsContent value="current">
               <div className="bg-card rounded-lg shadow-sm p-6 mb-8">
                 <div className="flex items-center mb-4">
                   <FileText className="h-5 w-5 mr-2 text-primary" />
-                  <h3 className="text-xl font-semibold">Version 1.9 - Current Release</h3>
+                  <h3 className="text-xl font-semibold">Version 2.2.4 - Current Release</h3>
                 </div>
 
                 <div className="flex items-center text-sm text-muted-foreground mb-6">
                   <Calendar className="h-4 w-4 mr-2" />
-                  <span>Planned Release 7/15/2025</span>
+                  <span>Planned Compleation 12/25/2025</span>
                 </div>
 
                 <div className="space-y-4">
                   <div className="bg-muted/40 p-4 rounded-md">
                     <h4 className="font-medium mb-2">New Features</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                      <li>Added WebGL-Fluid-Simulation</li>
-                      <li>Added Matrix</li>
-                      <li>Added Image Glitch</li>
-                      <li>Added Clear Cookies</li>
-                      <li>Added Auto Scroll</li>
-                      <li>Added Clear Local Storage</li>
-                      <li>Added Google Translate</li>
-                      <li>Added Wordle Hacks</li>
-                      <li>Added Time Shooter 2</li>
-                      <li>Added Color Picker</li>
-                      <li>Added Earthquake</li>
-                      <li>Added Old School</li>
-                      <li>Added Star Wars Intro</li>
-                      <li>Added Clear IndexDB</li>
-                      <li>Added Clear Cache</li>
-                      <li>Added Clear Session Storage</li>
-                      <li>Added Wasm-Patcher (Major Script)</li>
-                      <li>Added 15th Anniversary MC Cape Exploit (Major Exploit) (Removed Due To It Being Patched)</li>
-                      <li>Added Auto Clicker V2 (Major Script)</li>
-                      <li>Added Wordle Unlimited Hack</li>
-                      <li>Added Scan FSM and UI Labels to Wasm-Patcher</li>
-                      <li>Added Mobile Support</li>
-                      <li>Added Flappy Bird</li>
-                      <li>Added DragonX V2 International (Eaglercraft Hacked Client)</li>
-                      <li>Added Slope</li>
-                      <li>Added DOMI</li>
+                      <li>Kahoot Nickname Bypass (Script)</li>
+                      <li>Emoji Rain (Script)</li>
+                      <li>Flappy Bird Hacks</li>
+                      <li>ev.io hacks</li>
+                      <li>bloxd.io hacks</li>
+                      <li>Slope Hacks</li>
+                      <li>Kirka.io Hacks</li>
+                      <li>voxiom.io hacks</li>
                   </ul>
                 </div>
 
                 <div className="bg-muted/40 p-4 rounded-md">
                     <h4 className="font-medium mb-2">Improvements</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                      <li>Small update preparing for V2</li>
-                      <li>Updated Kahoot Botter</li>
-                      <li>Updated text for fullscreen button</li>
+                      <li>Executor Official Userscript. (Medium Update)</li>
+                      <li>Updated Executor Extension Version to 2.0.0</li>
+                      <li>Added a new feature where if you add ?executor at the end of a url it will auto run Executor (Extension Version Only & Userscript version)</li>
+                      <li>Added the ?executor url feature for the userscript version</li>
+                      <li>Finished New Executor Menu</li>
+                      <li>Renamed Cloaker to Tab Cloaker</li>
+                      <li>Updated Tab Cloaker</li>
+                      <li>Updated Color Picker</li>
+                      <li>Updated bloxd.io hacks</li>
+                      <li>Updated Kirka.io Hacks</li>
+                      <li>Updated Chrome Dino Hacks</li>
+                      <li>Added nice animations for minimize and fullscreen (new menu)</li>
+
                     </ul>
                   </div>
 
                 <div className="bg-muted/40 p-4 rounded-md">
                     <h4 className="font-medium mb-2">Bug Fixes</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                      <li>Fixed issue with browser</li>
-                      <li>Fixed light and dark mode making background transparent</li>
-                      <li>Fixed Prodigy cheats changing the background to white</li>
-                      <li>Fixed Gimkit hacks</li>
-                      <li>Fixed bug where Kahoot Botter would not open</li>
-                      <li>Fixed Executor Menu clipping into web elements issue</li>
-                      <li>Fixed Prodigy cheats messing up website elements</li>
-                      <li>Fixed custom cursors clipping into web elements issue</li>
-                      <li>Fixed custom cursor being able to drag in fullscreen</li>
-                      <li>Fixed custom cursor glitch where you could have multiple equipped cursors at once</li>
-                      <li>Fixed glitch for Clear Local Storage (Name = "Operation Cancelled")</li>
-                      <li>Fixed glitch for Clear Cookies (Name = "Operation Cancelled")</li>
-                      <li>Fixed glitch for 15th Anniversary MC Cape Exploit</li>
-                      <li>Fixed issue for Auto Clicker V2 where the Mac OS buttons do not work</li>
-                      <li>Fixed UI issue with settings button</li>
-                      <li>Fixed Time Shooter 2</li>
-                      <li>Fixed Wordle+</li>
-                      <li>Fixed Wordle Hacks</li>
-                      <li>Fixed Wordle hacks</li>
+                      <li>Fixed Search Bar Not Working In New Menu</li>
                     </ul>
                   </div>
                 </div>
@@ -117,7 +91,7 @@ export function NewsSection() {
               <div className="bg-card rounded-lg shadow-sm p-6 mb-8">
                 <div className="flex items-center mb-4">
                   <FileText className="h-5 w-5 mr-2 text-primary" />
-                  <h3 className="text-xl font-semibold">Version 1.9 - Whats New</h3>
+                  <h3 className="text-xl font-semibold">Version 2 - Whats New</h3>
                 </div>
 
                 <div className="flex items-center text-sm text-muted-foreground mb-6">
@@ -129,18 +103,63 @@ export function NewsSection() {
                   <div className="bg-muted/40 p-4 rounded-md">
                     <h4 className="font-medium mb-2">Features</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-                      <li>optimized the loading time for prodigy cheats so now it loads 2x faster</li>
-                      <li>Added inspect</li>
-                      <li>Updated Cookie Clicker Cheats To Add Dev Menu</li>
-                      <li>optimized loading time for darkmode&lightmode so now it loads 2x faster</li>
-                      <li> Bypassed CSP Blocking Alerts</li>
-                      <li>Added Custom Cursors (Major Script)</li>
-                      <li>Added Blooket Bot</li>
-                      <li>Added Kahoot Bot</li>
-                      <li>Added 2048</li>
-                      <li>Added Minecraft (Offline)</li>
-                      <li>Fixed Issue Where The Search Button Is Draggable As Well As Fullscreen Button Maximize Button And Close Menu Button</li>
-                      <li>Added Browser (Major Script)</li>
+                      <li>Fixed Issue With Browser</li>
+                      <li>Fixed Light And Dark Mode Making Background Transparent</li>
+                      <li>Added WebGL-Fluid-Simulation</li>
+                      <li>Fixed Prodigy Cheats Changing The Background To White</li>
+                      <li>Small Update Preparing For V2</li>
+                      <li>Updated Kahoot Botter</li>
+                      <li>Added Matrix</li>
+                      <li>Added Image Glitch</li>
+                      <li>Added Clear Cookies</li>
+                      <li>Added Auto Scroll</li>
+                      <li>Added Clear Local Storage</li>
+                      <li>Added Google Translate</li>
+                      <li>added Wordle Hacks</li>
+                      <li>added Time Shooter 2</li>
+                      <li>Fixed Gimkit hacks</li>
+                      <li>added color picker</li>
+                      <li>added earthquake</li>
+                      <li>added old school</li>
+                      <li>added star wars intro</li>
+                      <li>Fixed Bug Where Kahoot Botter Would Not Open</li>
+                      <li>Fixed Executor Menu Clipping Into Web Elements Issue</li>
+                      <li>Fixed Prodigy Cheats Messing Up Website Elements</li>
+                      <li>Fixed Custom Cursors Clipping Into Web Elements Issue</li>
+                      <li>Fixed Custom Cursor Being Able To Drag In Fullscreen</li>
+                      <li>Fixed Custom Cursor Glitch Where You Could Have Multiple Equipped Cursors At Once</li>
+                      <li>Updated Text for fullscreen button</li>
+                      <li>Fixed Glitch For Clear Local Storage Name=Operation Cancelled</li>
+                      <li>Fixed Glitch For Clear Cookies Name=Operation Cancelled</li>
+                      <li>Added 15th anniversary mc cape Exploit (Major Exploit) (Removed Due To It Being Patched)</li>
+                      <li>Fixed Glitch For 15th anniversary mc cape Exploit</li>
+                      <li>Added Clear IndexDB</li>
+                      <li>Added Clear Cache</li>
+                      <li>Added Clear Session Storage</li>
+                      <li>Added Wasm-Patcher (Major Script)</li>
+                      <li>Added Auto Clicker V2 (Major Script)</li>
+                      <li>Fixed Issue for Auto Clicker V2 where the mac os buttons do not work.</li>
+                      <li>Added Wordle Unlimited Hack</li>
+                      <li>Added scan fsm and ui labels to Wasm-Patcher</li>
+                      <li>Fixed Ui issue with settings button</li>
+                      <li>Added Mobile Support</li>
+                      <li>Added Flappy Bird</li>
+                      <li>Fixed Time Shooter 2</li>
+                      <li>Fixed Wordle+</li>
+                      <li>Fixed Wordle Hacks</li>
+                      <li>Added DragonX V2 International (Eaglercraft Hacked Client)</li>
+                      <li>Added Slope</li>
+                      <li>Added DOMI</li>
+                      <li>Fixed Wordle hacks</li>
+                      <li>Small Updates To Website</li>
+                      <li>Updated Injection Method</li>
+                      <li>Renamed Prodigy Cheats to Prodigy Cheats (Outdated)</li>
+                      <li>Optimized Executor's code and scripting</li>
+                      <li>Fixed Chrome Dino Cheats</li>
+                      <li>Added X-Ray</li>
+                      <li>Updated Prod Cheats to newest version (uses pxi-fusions menu)</li>
+                      <li>Fixed error with "Inspect (Toggle)"</li>
+                      <li>Updated PXI-Fusion (Prodigy Cheats) to V2</li>
                     </ul>
                   </div>
 
