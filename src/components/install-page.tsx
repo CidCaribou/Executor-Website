@@ -286,7 +286,7 @@ export function InstallPage() {
               </CardContent>
             </Card>
           </TabsContent>
-          <TabsContent value="userscript">
+ <TabsContent value="userscript">
   <Card>
     <CardHeader>
       <CardTitle>Executor Userscript</CardTitle>
@@ -295,34 +295,48 @@ export function InstallPage() {
       </CardDescription>
     </CardHeader>
     <CardContent className="space-y-6">
-      <div className="bg-muted p-6 rounded-lg">
-        <h3 className="font-medium mb-2 flex items-center">
-          <Bookmark className="h-5 w-5 mr-2 text-primary" />
-          How to Install the Userscript
-        </h3>
-        <ol className="list-decimal list-inside space-y-4">
-          <li className="text-sm">
-            Install a Userscript manager if you don’t have one:
-            <ul className="list-disc list-inside ml-4 text-sm">
-              <li>Tampermonkey (Chrome/Edge/Opera)</li>
-              <li>Greasemonkey (Firefox)</li>
-              <li>Violentmonkey (Chrome/Firefox)</li>
-            </ul>
-          </li>
-          <li className="text-sm">
-            Click the download link below to get the Userscript:
-            <Button className="ml-2" onClick={() => { window.location.href = 'https://github.com/CidCaribou/Executor-Menu/raw/refs/heads/main/Userscript/Menu.user.js' }}>
-              <Download className="mr-2 h-4 w-4" />
-              Download Userscript
-            </Button>
-          </li>
-          <li className="text-sm">
-            Open the downloaded script in your Userscript manager and approve installation.
-          </li>
-          <li className="text-sm">
-            Once installed, use the bookmarklet to activate userscript version.
-          </li>
-        </ol>
+      <div className="bg-muted/40 p-8 rounded-lg">
+        <div className="flex items-center mb-4">
+          <img
+            src="/downloads/Executor-Extension-Icon.png" 
+            alt="Executor Userscript"
+            className="h-12 w-12 mr-3"
+          />
+          <div>
+            <h3 className="text-xl font-medium">Executor Userscript</h3>
+            <p className="text-muted-foreground">For Tampermonkey, Greasemonkey, or Violentmonkey</p>
+          </div>
+        </div>
+
+        <div className="bg-muted p-6 rounded-lg">
+          <h3 className="font-medium mb-2 flex items-center">
+            <Bookmark className="h-5 w-5 mr-2 text-primary" />
+            How to Install the Userscript
+          </h3>
+          <ol className="list-decimal list-inside space-y-4">
+            <li className="text-sm">
+              Install a Userscript manager if you don’t have one:
+              <ul className="list-disc list-inside ml-4 text-sm">
+                <li>Tampermonkey (Chrome/Edge/Opera)</li>
+                <li>Greasemonkey (Firefox)</li>
+                <li>Violentmonkey (Chrome/Firefox)</li>
+              </ul>
+            </li>
+            <li className="text-sm">
+              Click the download link below to get the Userscript:
+              <Button className="ml-2" onClick={() => { window.location.href = 'https://github.com/CidCaribou/Executor-Menu/raw/refs/heads/main/Userscript/Menu.user.js' }}>
+                <Download className="mr-2 h-4 w-4" />
+                Download Userscript
+              </Button>
+            </li>
+            <li className="text-sm">
+              Open the downloaded script in your Userscript manager and approve installation.
+            </li>
+            <li className="text-sm">
+              Once installed, use the bookmarklet to activate the userscript version.
+            </li>
+          </ol>
+        </div>
       </div>
     </CardContent>
   </Card>
