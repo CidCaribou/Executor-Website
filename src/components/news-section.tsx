@@ -26,7 +26,7 @@ export function NewsSection() {
         <div className="max-w-5xl mx-auto">
           <Tabs defaultValue="current" className="mb-12">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
-              <TabsTrigger value="current">Current (V2.2.4)</TabsTrigger>
+              <TabsTrigger value="current">Current (V2.2.9)</TabsTrigger>
               <TabsTrigger value="old">Whats New (V2)</TabsTrigger>
             </TabsList>
 
@@ -34,7 +34,7 @@ export function NewsSection() {
               <div className="bg-card rounded-lg shadow-sm p-6 mb-8">
                 <div className="flex items-center mb-4">
                   <FileText className="h-5 w-5 mr-2 text-primary" />
-                  <h3 className="text-xl font-semibold">Version 2.2.4 - Current Release</h3>
+                  <h3 className="text-xl font-semibold">Version 2.2.9 - Current Release</h3>
                 </div>
 
                 <div className="flex items-center text-sm text-muted-foreground mb-6">
