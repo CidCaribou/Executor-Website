@@ -35,7 +35,7 @@ export function NewsSection() {
               <div className="bg-card rounded-lg shadow-sm p-6 mb-8">
                 <div className="flex items-center mb-4">
                   <FileText className="h-5 w-5 mr-2 text-primary" />
-                <h3 className="text-xl font-semibold">Version 2.2.9 - Current Release</h3>
+                <h3 className="text-xl font-semibold">Version 2.3.5 - Current Release</h3>
                 </div>
 
                 <div className="flex items-center text-sm text-muted-foreground mb-6">
