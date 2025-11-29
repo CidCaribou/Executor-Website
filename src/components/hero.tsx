@@ -1,5 +1,6 @@
 import { Button } from "./ui/button"
 import { Link } from "react-router-dom"
+import { VersionDisplay } from "./version-display"
 
 export function Hero() {
   return (
@@ -35,7 +36,7 @@ export function Hero() {
                 <div className="h-2 w-2 rounded-full bg-green-500" />
               </div>
               <div className="mx-auto text-xs text-muted-foreground">
-                Executor V2.2.9
+                Executor <VersionDisplay />
               </div>
             </div>
           </div>
