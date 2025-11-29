@@ -33,7 +33,7 @@ export function Footer() {
           <div className="flex flex-col gap-2">
             <h3 className="text-sm font-medium">Resources</h3>
             <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <li><a href="#docs" className="hover:text-foreground transition-colors">Documentation</a></li>
+              <li><a href="docs" className="hover:text-foreground transition-colors">Documentation</a></li>
               <li><a href="https://discord.com/invite/EVDpJDudAa" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Tutorials</a></li>
               <li><a href="https://discord.com/invite/EVDpJDudAa" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Script Hub</a></li>
               <li><a href="https://discord.com/invite/EVDpJDudAa" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Community</a></li>
