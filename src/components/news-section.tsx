@@ -1,4 +1,5 @@
 import { FileText, Calendar, Newspaper } from "lucide-react"
+import { VersionDisplay } from "./version-display"
 import {
   Tabs,
   TabsContent,
@@ -26,7 +27,7 @@ export function NewsSection() {
         <div className="max-w-5xl mx-auto">
           <Tabs defaultValue="current" className="mb-12">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
-              <TabsTrigger value="current">Current (V2.2.9)</TabsTrigger>
+            <h3 className="text-xl font-semibold">Version <VersionDisplay /> - Current Release</h3>
               <TabsTrigger value="old">Whats New (V2)</TabsTrigger>
             </TabsList>
 
@@ -39,7 +40,7 @@ export function NewsSection() {
 
                 <div className="flex items-center text-sm text-muted-foreground mb-6">
                   <Calendar className="h-4 w-4 mr-2" />
-                  <span>Planned Compleation 12/25/2025</span>
+                  <span>Planned Compleation 4/14/2026</span>
                 </div>
 
                 <div className="space-y-4">
