@@ -25,15 +25,15 @@ export function Footer() {
           <div className="flex flex-col gap-2">
             <h3 className="text-sm font-medium">Product</h3>
             <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <li><a href="https://executor-official.netlify.app/features" className="hover:text-foreground transition-colors">Features</a></li>
-              <li><a href="https://executor-official.netlify.app/install" className="hover:text-foreground transition-colors">Download</a></li>
-              <li><a href="https://executor-official.netlify.app/news" className="hover:text-foreground transition-colors">Updates</a></li>
+              <li><a href="#features" className="hover:text-foreground transition-colors">Features</a></li>
+              <li><a href="#install" className="hover:text-foreground transition-colors">Download</a></li>
+              <li><a href="#news" className="hover:text-foreground transition-colors">Updates</a></li>
             </ul>
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="text-sm font-medium">Resources</h3>
             <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <li><a href="https://executor-official.netlify.app/docs" className="hover:text-foreground transition-colors">Documentation</a></li>
+              <li><a href="#docs" className="hover:text-foreground transition-colors">Documentation</a></li>
               <li><a href="https://discord.com/invite/EVDpJDudAa" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Tutorials</a></li>
               <li><a href="https://discord.com/invite/EVDpJDudAa" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Script Hub</a></li>
               <li><a href="https://discord.com/invite/EVDpJDudAa" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">Community</a></li>
@@ -42,8 +42,8 @@ export function Footer() {
           <div className="flex flex-col gap-2">
             <h3 className="text-sm font-medium">Legal</h3>
             <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <li><a href="https://executor-official.netlify.app/docs" className="hover:text-foreground transition-colors">Terms</a></li>
-              <li><a href="https://executor-official.netlify.app/docs" className="hover:text-foreground transition-colors">Privacy</a></li>
+              <li><a href="#docs" className="hover:text-foreground transition-colors">Terms</a></li>
+              <li><a href="#docs" className="hover:text-foreground transition-colors">Privacy</a></li>
             </ul>
           </div>
         </div>
