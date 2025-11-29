@@ -15,12 +15,7 @@ export function Footer() {
             Executor is a powerful and intuitive script management tool designed to enhance your experience.
           </p>
           <div className="mt-2">
-            
-              href="https://github.com/CidCaribou/Executor-Menu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
+            <a href="https://github.com/CidCaribou/Executor-Menu" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
               <Github className="h-4 w-4" />
               GitHub Repository
             </a>
