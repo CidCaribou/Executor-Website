@@ -1,5 +1,4 @@
 import { FileText, Calendar, Newspaper } from "lucide-react"
-import { VersionDisplay } from "./version-display"
 import {
   Tabs,
   TabsContent,
