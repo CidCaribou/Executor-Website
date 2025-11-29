@@ -31,7 +31,6 @@ export function Footer() {
             <h3 className="text-sm font-medium">Product</h3>
             <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Pricing</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Download</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Updates</a></li>
             </ul>
