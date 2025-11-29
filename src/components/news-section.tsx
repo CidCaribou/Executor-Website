@@ -113,7 +113,7 @@ export function NewsSection() {
 
                 <div className="flex items-center text-sm text-muted-foreground mb-6">
                   <Calendar className="h-4 w-4 mr-2" />
-                  <span>Released</span>
+                  <span>Released 1/8/2025</span>
                 </div>
 
                 <div className="space-y-4">
