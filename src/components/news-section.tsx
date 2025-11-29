@@ -1,4 +1,5 @@
 import { FileText, Calendar, Newspaper } from "lucide-react"
+import { VersionDisplay } from "./version-display"
 import {
   Tabs,
   TabsContent,
@@ -26,7 +27,7 @@ export function NewsSection() {
         <div className="max-w-5xl mx-auto">
           <Tabs defaultValue="current" className="mb-12">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
-            <TabsTrigger <h3 className="text-xl font-semibold">Version 2.2.9 - Current Release</h3> </TabsTrigger>
+              <TabsTrigger value="current">Current Release</TabsTrigger>
               <TabsTrigger value="old">Whats New (V2)</TabsTrigger>
             </TabsList>
 
@@ -34,68 +35,74 @@ export function NewsSection() {
               <div className="bg-card rounded-lg shadow-sm p-6 mb-8">
                 <div className="flex items-center mb-4">
                   <FileText className="h-5 w-5 mr-2 text-primary" />
-                <h3 className="text-xl font-semibold">Version 2.3.5 - Current Release</h3>
+                  <h3 className="text-xl font-semibold">Version <VersionDisplay /> - Current Release</h3>
                 </div>
 
                 <div className="flex items-center text-sm text-muted-foreground mb-6">
                   <Calendar className="h-4 w-4 mr-2" />
-                  <span>Planned Compleation 4/14/2026</span>
+                  <span>Planned Completion 4/14/2026</span>
                 </div>
 
-<div className="space-y-4">
-  <div className="bg-muted/40 p-4 rounded-md">
-    <h4 className="font-medium mb-2">New Features</h4>
-    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-      <li>Finished New Executor Menu</li>
-      <li>Added a new feature where if you add ?executor at the end of a url it will auto run Executor (Extension Version Only & Userscript version)</li>
-      <li>Added the ?executor url feature for the userscript version</li>
-      <li>Added nice animations for minimize and fullscreen (new menu)</li>
-      <li>Kahoot Nickname Bypass (Script)</li>
-      <li>Emoji Rain (Script)</li>
-      <li>Flappy Bird Hacks</li>
-      <li>ev.io hacks</li>
-      <li>bloxd.io hacks</li>
-      <li>Slope Hacks</li>
-      <li>Kirka.io Hacks</li>
-      <li>voxiom.io hacks</li>
-      <li>Krunker.io hacks (⚠️Only supported on Userscript version for now⚠️)</li>
-      <li>minefun.io hacks</li>
-      <li>narrow.one hacks</li>
-      <li>vectaria.io hacks</li>
-      <li>cryzen.io hacks</li>
-    </ul>
-  </div>
-  <div className="bg-muted/40 p-4 rounded-md">
-    <h4 className="font-medium mb-2">Improvements</h4>
-    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-      <li>Executor Official Userscript. (Medium Update)</li>
-      <li>Updated Executor Extension Version to 2.0.0</li>
-      <li>Updated Userscript Version (Auto Updates Instantly now)</li>
-      <li>Updated website</li>
-      <li>Renamed Cloaker to Tab Cloaker</li>
-      <li>Updated Tab Cloaker</li>
-      <li>Updated Color Picker</li>
-      <li>Updated bloxd.io hacks</li>
-      <li>Updated Kirka.io Hacks</li>
-      <li>Updated Chrome Dino Hacks</li>
-      <li>Updated Gimkit hacks</li>
-      <li>Loading alert now shows until script either fails to load or succeeds</li>
-    </ul>
-  </div>
-  <div className="bg-muted/40 p-4 rounded-md">
-    <h4 className="font-medium mb-2">Bug Fixes</h4>
-    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
-      <li>Fixed Search Bar Not Working In New Menu</li>
-      <li>Fixed major issue with where menu spawns</li>
-      <li>Fixed blooket hacks</li>
-      <li>Fixed bug (not being able to open executor when closed)</li>
-      <li>Fixed sweet alert bug</li>
-    </ul>
-  </div>
-</div>
+                <div className="space-y-4">
+                  <div className="bg-muted/40 p-4 rounded-md">
+                    <h4 className="font-medium mb-2">New Features</h4>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Finished New Executor Menu</li>
+                      <li>
+                        Added a new feature where if you add ?executor at the end of a url it
+                        will auto run Executor (Extension Version Only & Userscript version)
+                      </li>
+                      <li>Added the ?executor url feature for the userscript version</li>
+                      <li>Added nice animations for minimize and fullscreen (new menu)</li>
+                      <li>Kahoot Nickname Bypass (Script)</li>
+                      <li>Emoji Rain (Script)</li>
+                      <li>Flappy Bird Hacks</li>
+                      <li>ev.io hacks</li>
+                      <li>bloxd.io hacks</li>
+                      <li>Slope Hacks</li>
+                      <li>Kirka.io Hacks</li>
+                      <li>voxiom.io hacks</li>
+                      <li>
+                        Krunker.io hacks (⚠️Only supported on Userscript version for now⚠️)
+                      </li>
+                      <li>minefun.io hacks</li>
+                      <li>narrow.one hacks</li>
+                      <li>vectaria.io hacks</li>
+                      <li>cryzen.io hacks</li>
+                    </ul>
+                  </div>
+                  <div className="bg-muted/40 p-4 rounded-md">
+                    <h4 className="font-medium mb-2">Improvements</h4>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Executor Official Userscript. (Medium Update)</li>
+                      <li>Updated Executor Extension Version to 2.0.0</li>
+                      <li>Updated Userscript Version (Auto Updates Instantly now)</li>
+                      <li>Updated website</li>
+                      <li>Renamed Cloaker to Tab Cloaker</li>
+                      <li>Updated Tab Cloaker</li>
+                      <li>Updated Color Picker</li>
+                      <li>Updated bloxd.io hacks</li>
+                      <li>Updated Kirka.io Hacks</li>
+                      <li>Updated Chrome Dino Hacks</li>
+                      <li>Updated Gimkit hacks</li>
+                      <li>
+                        Loading alert now shows until script either fails to load or succeeds
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-muted/40 p-4 rounded-md">
+                    <h4 className="font-medium mb-2">Bug Fixes</h4>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Fixed Search Bar Not Working In New Menu</li>
+                      <li>Fixed major issue with where menu spawns</li>
+                      <li>Fixed blooket hacks</li>
+                      <li>Fixed bug (not being able to open executor when closed)</li>
+                      <li>Fixed sweet alert bug</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </TabsContent>
-
 
             <TabsContent value="old">
               <div className="bg-card rounded-lg shadow-sm p-6 mb-8">
