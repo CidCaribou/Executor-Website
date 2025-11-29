@@ -64,9 +64,10 @@ export function FeaturesSection() {
               <ul className="space-y-2">
                 <FeatureListItem text="WASM-Patcher: A cheat engine for Unity games" />
                 <FeatureListItem text="Auto-clicker for faster gameplay" />
-                <FeatureListItem text="Game resource hacks" />
-                <FeatureListItem text="Character unlocker tools" />
-                <FeatureListItem text="Custom game tweaks and modifications" />
+                <FeatureListItem text="Flappy Bird hacks" />
+                <FeatureListItem text="Cookie Clicker Hacks" />
+                <FeatureListItem text="Blooket Cheats" />
+                <FeatureListItem text="And More" />
               </ul>
             </div>
 
@@ -75,9 +76,10 @@ export function FeaturesSection() {
               <ul className="space-y-2">
                 <FeatureListItem text="Browser inside of a browser" />
                 <FeatureListItem text="Custom cursors" />
-                <FeatureListItem text="Element inspector" />
+                <FeatureListItem text="Tab Cloaker" />
                 <FeatureListItem text="Developer console" />
-                <FeatureListItem text="Auto clicker" />
+                <FeatureListItem text="Ad Blocker" />
+                <FeatureListItem text="And More" />
               </ul>
             </div>
           </div>
