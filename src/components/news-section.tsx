@@ -26,7 +26,7 @@ export function NewsSection() {
         <div className="max-w-5xl mx-auto">
           <Tabs defaultValue="current" className="mb-12">
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
-            <h3 className="text-xl font-semibold">Version 2.2.9 - Current Release</h3>
+            <TabsTrigger <h3 className="text-xl font-semibold">Version 2.2.9 - Current Release</h3> </TabsTrigger>
               <TabsTrigger value="old">Whats New (V2)</TabsTrigger>
             </TabsList>
 
