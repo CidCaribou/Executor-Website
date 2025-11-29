@@ -10,7 +10,7 @@ export function DiscordSection() {
           <div className="max-w-md text-white">
             <h2 className="text-3xl font-bold tracking-tight mb-4">Join Our Discord Community</h2>
             <p className="mb-8">
-              Get help, share scripts, and connect with other Executor users. Our Discord server is the hub for all things Executor!
+              Get help, share scripts, and connect with other Executor users. Our Discord server is the best place to go for all things Executor!
             </p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center">
