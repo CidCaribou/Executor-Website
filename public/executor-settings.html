@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+window.addEventListener("message", (e) => {
+    const data = e.data;
+
+    if (data.type === "get") {
+        const value = localStorage.getItem(data.key);
+        e.source.postMessage({
+            type: "getResult",
+            key: data.key,
+            value
+        }, "*");
+    }
+
+    if (data.type === "set") {
+        localStorage.setItem(data.key, data.value);
+        e.source.postMessage({
+            type: "setResult",
+            key: data.key,
+            status: "ok"
+        }, "*");
+    }
+});
+</script>
+</body>
+</html>
