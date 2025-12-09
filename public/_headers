@@ -1,2 +1,5 @@
 /executor-extension.crx
   Content-Type: application/x-chrome-extension
+/executor-settings.html
+  X-Frame-Options: ALLOWALL
+  Content-Security-Policy: frame-ancestors *;
