@@ -143,6 +143,7 @@ export function DocumentationSection() {
                 <p>• Executor Made By Wasd.</p>
                 <p>• Logo Made by Bharat Icons on https://www.freepik.com/icon/file_8083509</p>
                 <p>• DOMI Made by https://blog.roysolberg.com/js/dom2.min.js</p>
+                <p>• Pxi-Fusion Made by https://discord.gg/5cMqHfgpYy</p>
               </div>
               <p className="text-sm text-muted-foreground mt-4">
                 If you have made something in Executor and want credits, then join the discord server and create a bug report, providing valid proof that you own it.
